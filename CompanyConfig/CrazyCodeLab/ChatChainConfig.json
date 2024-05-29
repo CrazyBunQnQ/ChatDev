@@ -71,6 +71,6 @@
   "web_spider": "False",
   "self_improve": "False",
   "incremental_develop": "False",
-  "with_memory": "True",
+  "with_memory": "False",
   "background_prompt": "CrazyCodeLab是一家由首席执行官、产品经理、首席技术官等多个智能主体驱动的软件公司，具有多主体组织结构，以“通过编程获得财富”为使命。"
 }
