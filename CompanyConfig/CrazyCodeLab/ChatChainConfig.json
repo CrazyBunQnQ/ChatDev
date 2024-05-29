@@ -7,12 +7,6 @@
       "need_reflect": "True"
     },
     {
-      "phase": "LanguageChoose",
-      "phaseType": "SimplePhase",
-      "max_turn_step": -1,
-      "need_reflect": "True"
-    },
-    {
       "phase": "Coding",
       "phaseType": "SimplePhase",
       "max_turn_step": 1,
@@ -51,25 +45,6 @@
       ]
     },
     {
-      "phase": "Test",
-      "phaseType": "ComposedPhase",
-      "cycleNum": 3,
-      "Composition": [
-        {
-          "phase": "TestErrorSummary",
-          "phaseType": "SimplePhase",
-          "max_turn_step": 1,
-          "need_reflect": "False"
-        },
-        {
-          "phase": "TestModification",
-          "phaseType": "SimplePhase",
-          "max_turn_step": 1,
-          "need_reflect": "False"
-        }
-      ]
-    },
-    {
       "phase": "EnvironmentDoc",
       "phaseType": "SimplePhase",
       "max_turn_step": 1,
@@ -84,21 +59,18 @@
   ],
   "recruitments": [
     "Chief Executive Officer",
-    "Counselor",
-    "Chief Human Resource Officer",
     "Chief Product Officer",
     "Chief Technology Officer",
     "Programmer",
     "Code Reviewer",
-    "Software Test Engineer",
     "Chief Creative Officer"
   ],
   "clear_structure": "True",
-  "gui_design": "True",
+  "gui_design": "False",
   "git_management": "False",
   "web_spider": "False",
   "self_improve": "False",
   "incremental_develop": "False",
-  "with_memory": "False",
-  "background_prompt": "CrazyCodeLab是一家由首席执行官、首席人力资源官、产品经理、首席技术官等多个智能主体驱动的软件公司，具有多主体组织结构，以“通过编程改变数字世界”为使命。"
+  "with_memory": "True",
+  "background_prompt": "CrazyCodeLab是一家由首席执行官、产品经理、首席技术官等多个智能主体驱动的软件公司，具有多主体组织结构，以“通过编程获得财富”为使命。"
 }
