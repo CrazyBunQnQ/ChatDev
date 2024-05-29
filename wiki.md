@@ -48,7 +48,7 @@
     ├── todo.prompt # User query prompt
     ├── meta.txt # Software building metainformation
     ├── main.py # Generated Software Files
-    ├── manual.md # Generated Software Files
+    ├── README.md # Generated Software Files
     ├── todo_app.py # Generated Software Files
     ├── task.py # Generated Software Files
     └── requirements.txt # Generated Software Files

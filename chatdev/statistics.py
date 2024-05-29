@@ -83,8 +83,8 @@ def get_info(dir, log_filepath):
             env_lines = -1
         # print("env_lines:", env_lines)
 
-        if "manual.md" in filenames:
-            lines = open(os.path.join(dir, "manual.md"), "r", encoding="utf8").read().split("\n")
+        if "README.md" in filenames:
+            lines = open(os.path.join(dir, "README.md"), "r", encoding="utf8").read().split("\n")
             manual_lines = len([line for line in lines if len(line.strip()) > 0])
         else:
             manual_lines = -1

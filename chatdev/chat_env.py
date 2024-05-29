@@ -187,7 +187,7 @@ class ChatEnv:
         return self.requirements._get_docs()
 
     def _update_manuals(self, generated_content):
-        self.manuals._update_docs(generated_content, parse=False, predifined_filename="manual.md")
+        self.manuals._update_docs(generated_content, parse=False, predifined_filename="README.md")
 
     def rewrite_manuals(self):
         self.manuals._rewrite_docs()
