@@ -9,7 +9,7 @@ app.logger.setLevel(logging.ERROR)
 log = logging.getLogger('werkzeug')
 log.setLevel(logging.ERROR)
 messages = []
-port = [8000]
+port = [7860]
 
 def send_msg(role, text):
     try:

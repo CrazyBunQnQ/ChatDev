@@ -104,7 +104,7 @@ class ChatAgent(BaseAgent):
         self.terminated: bool = False
         self.info: bool = False
         self.init_messages()
-        if memory !=None and self.role_name in["Code Reviewer","Programmer","Software Test Engineer"]:
+        if memory !=None and self.role_name in["代码审查员","程序员","软件测试工程师"]:
             self.memory = memory.memory_data.get("All")
         else:
             self.memory = None
@@ -169,7 +169,7 @@ class ChatAgent(BaseAgent):
         if self.memory is None :
             return None
         else:
-            if self.role_name == "Programmer":
+            if self.role_name == "程序员":
                 result = self.memory.memory_retrieval(input_message,"code")
                 if result != None:
                     target_memory,distances, mids,task_list,task_dir_list = result

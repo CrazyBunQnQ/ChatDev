@@ -246,7 +246,7 @@ class Test(ComposedPhase):
 
     def break_cycle(self, phase_env) -> bool:
         if not phase_env['exist_bugs_flag']:
-            log_visualize(f"**[Test Info]**\n\nAI User (Software Test Engineer):\nTest Pass!\n")
+            log_visualize(f"**[Test Info]**\n\nAI User (软件测试工程师):\nTest Pass!\n")
             return True
         else:
             return False

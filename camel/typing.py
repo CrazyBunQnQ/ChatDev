@@ -33,14 +33,14 @@ class RoleType(Enum):
     DEFAULT = "default"
     CHATDEV = "AgentTech"
     CHATDEV_COUNSELOR = "counselor"
-    CHATDEV_CEO = "chief executive officer (CEO)"
-    CHATDEV_CHRO = "chief human resource officer (CHRO)"
-    CHATDEV_CPO = "chief product officer (CPO)"
-    CHATDEV_CTO = "chief technology officer (CTO)"
-    CHATDEV_PROGRAMMER = "programmer"
-    CHATDEV_REVIEWER = "code reviewer"
-    CHATDEV_TESTER = "software test engineer"
-    CHATDEV_CCO = "chief creative officer (CCO)"
+    CHATDEV_CEO = "首席执行官 (CEO)"
+    CHATDEV_CHRO = "首席人力资源官 (CHRO)"
+    CHATDEV_CPO = "产品经理 (CPO)"
+    CHATDEV_CTO = "首席技术官 (CTO)"
+    CHATDEV_PROGRAMMER = "程序员"
+    CHATDEV_REVIEWER = "代码审查员"
+    CHATDEV_TESTER = "软件测试工程师"
+    CHATDEV_CCO = "首席创意官 (CCO)"
 
 
 class ModelType(Enum):

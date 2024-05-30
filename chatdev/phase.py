@@ -37,8 +37,8 @@ class Phase(ABC):
         self.phase_name = phase_name
         self.assistant_role_prompt = role_prompts[assistant_role_name]
         self.user_role_prompt = role_prompts[user_role_name]
-        self.ceo_prompt = role_prompts["Chief Executive Officer"]
-        self.counselor_prompt = role_prompts["Counselor"]
+        self.ceo_prompt = role_prompts["首席执行官"]
+        self.counselor_prompt = role_prompts["顾问"]
         self.max_retries = 3
         self.reflection_prompt = """Here is a conversation between two roles: {conversations} {question}"""
         self.model_type = model_type
@@ -221,8 +221,8 @@ class Phase(ABC):
         reflected_content = \
             self.chatting(chat_env=chat_env,
                           task_prompt=task_prompt,
-                          assistant_role_name="Chief Executive Officer",
-                          user_role_name="Counselor",
+                          assistant_role_name="首席执行官",
+                          user_role_name="顾问",
                           phase_prompt=self.reflection_prompt,
                           phase_name="Reflection",
                           assistant_role_prompt=self.ceo_prompt,
@@ -566,12 +566,12 @@ class TestErrorSummary(Phase):
         if "ModuleNotFoundError" in self.phase_env['test_reports']:
             chat_env.fix_module_not_found_error(self.phase_env['test_reports'])
             log_visualize(
-                f"Software Test Engineer found ModuleNotFoundError:\n{self.phase_env['test_reports']}\n")
+                f"软件测试工程师 found ModuleNotFoundError:\n{self.phase_env['test_reports']}\n")
             pip_install_content = ""
             for match in re.finditer(r"No module named '(\S+)'", self.phase_env['test_reports'], re.DOTALL):
                 module = match.group(1)
                 pip_install_content += "{}\n```{}\n{}\n```\n".format("cmd", "bash", f"pip install {module}")
-                log_visualize(f"Programmer resolve ModuleNotFoundError by:\n{pip_install_content}\n")
+                log_visualize(f"程序员 resolve ModuleNotFoundError by:\n{pip_install_content}\n")
             self.seminar_conclusion = "nothing need to do"
         else:
             self.seminar_conclusion = \

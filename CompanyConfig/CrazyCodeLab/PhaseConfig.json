@@ -1,7 +1,7 @@
 {
   "DemandAnalysis": {
-    "assistant_role_name": "Chief Product Officer",
-    "user_role_name": "Chief Executive Officer",
+    "assistant_role_name": "产品经理",
+    "user_role_name": "首席执行官",
     "phase_prompt": [
       "CrazyCodeLab之前做过以下形式的产品：",
       "图片：可以以折线图、条形图、流程图、云图、甘特图等方式呈现信息。",
@@ -18,8 +18,8 @@
     ]
   },
   "LanguageChoose": {
-    "assistant_role_name": "Chief Technology Officer",
-    "user_role_name": "Chief Executive Officer",
+    "assistant_role_name": "首席技术官",
+    "user_role_name": "首席执行官",
     "phase_prompt": [
       "根据新用户的任务和一些创造性的头脑风暴想法如下：",
       "任务: \"{task}\".",
@@ -31,8 +31,8 @@
     ]
   },
   "Coding": {
-    "assistant_role_name": "Programmer",
-    "user_role_name": "Chief Technology Officer",
+    "assistant_role_name": "程序员",
+    "user_role_name": "首席技术官",
     "phase_prompt": [
       "根据新用户的任务和我们的软件设计如下：",
       "任务: \"{task}\".",
@@ -55,8 +55,8 @@
     ]
   },
   "ArtDesign": {
-    "assistant_role_name": "Programmer",
-    "user_role_name": "Chief Creative Officer",
+    "assistant_role_name": "程序员",
+    "user_role_name": "首席创意官",
     "phase_prompt": [
       "我们开发的源代码和相应的测试报告如下：",
       "任务: \"{task}\".",
@@ -81,8 +81,8 @@
     ]
   },
   "ArtIntegration": {
-    "assistant_role_name": "Programmer",
-    "user_role_name": "Chief Creative Officer",
+    "assistant_role_name": "程序员",
+    "user_role_name": "首席创意官",
     "phase_prompt": [
       "我们开发的源代码和相应的测试报告如下：",
       "任务: \"{task}\".",
@@ -106,8 +106,8 @@
     ]
   },
   "CodeComplete": {
-    "assistant_role_name": "Programmer",
-    "user_role_name": "Chief Technology Officer",
+    "assistant_role_name": "程序员",
+    "user_role_name": "首席技术官",
     "phase_prompt": [
       "根据新用户的任务和我们的软件设计如下：",
       "任务: \"{task}\".",
@@ -128,8 +128,8 @@
     ]
   },
   "CodeReviewComment": {
-    "assistant_role_name": "Code Reviewer",
-    "user_role_name": "Programmer",
+    "assistant_role_name": "代码审查员",
+    "user_role_name": "程序员",
     "phase_prompt": [
       "根据新用户的任务和我们的软件设计：",
       "任务: \"{task}\".",
@@ -148,8 +148,8 @@
     ]
   },
   "CodeReviewModification": {
-    "assistant_role_name": "Programmer",
-    "user_role_name": "Code Reviewer",
+    "assistant_role_name": "程序员",
+    "user_role_name": "代码审查员",
     "phase_prompt": [
       "根据新用户的任务，我们设计的产品形态、语言和理念，我们开发的第一版源代码如下：",
       "任务: \"{task}\".",
@@ -171,8 +171,8 @@
     ]
   },
   "TestErrorSummary": {
-    "assistant_role_name": "Programmer",
-    "user_role_name": "Software Test Engineer",
+    "assistant_role_name": "程序员",
+    "user_role_name": "软件测试工程师",
     "phase_prompt": [
       "我们开发的源代码和相应的测试报告如下：",
       "源代码:",
@@ -183,8 +183,8 @@
     ]
   },
   "TestModification": {
-    "assistant_role_name": "Programmer",
-    "user_role_name": "Software Test Engineer",
+    "assistant_role_name": "程序员",
+    "user_role_name": "软件测试工程师",
     "phase_prompt": [
       "我们开发的源代码和相应的测试报告如下：",
       "源代码:",
@@ -205,8 +205,8 @@
     ]
   },
   "EnvironmentDoc": {
-    "assistant_role_name": "Programmer",
-    "user_role_name": "Chief Technology Officer",
+    "assistant_role_name": "程序员",
+    "user_role_name": "首席技术官",
     "phase_prompt": [
       "列出了新用户的任务和我们开发的代码：",
       "任务: \"{task}\".",
@@ -224,8 +224,8 @@
     ]
   },
   "Manual": {
-    "assistant_role_name": "Chief Product Officer",
-    "user_role_name": "Chief Executive Officer",
+    "assistant_role_name": "产品经理",
+    "user_role_name": "首席执行官",
     "phase_prompt": [
       "列出了新用户的任务、我们开发的代码和所需的依赖项：",
       "任务: \"{task}\".",

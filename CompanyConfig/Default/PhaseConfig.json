@@ -1,7 +1,7 @@
 {
   "DemandAnalysis": {
-    "assistant_role_name": "Chief Product Officer",
-    "user_role_name": "Chief Executive Officer",
+    "assistant_role_name": "产品经理",
+    "user_role_name": "首席执行官",
     "phase_prompt": [
       "ChatDev has made products in the following form before:",
       "Image: can present information in line chart, bar chart, flow chart, cloud chart, Gantt chart, etc.",
@@ -18,8 +18,8 @@
     ]
   },
   "LanguageChoose": {
-    "assistant_role_name": "Chief Technology Officer",
-    "user_role_name": "Chief Executive Officer",
+    "assistant_role_name": "首席技术官",
+    "user_role_name": "首席执行官",
     "phase_prompt": [
       "According to the new user's task and some creative brainstorm ideas listed below: ",
       "Task: \"{task}\".",
@@ -31,8 +31,8 @@
     ]
   },
   "Coding": {
-    "assistant_role_name": "Programmer",
-    "user_role_name": "Chief Technology Officer",
+    "assistant_role_name": "程序员",
+    "user_role_name": "首席技术官",
     "phase_prompt": [
       "According to the new user's task and our software designs listed below: ",
       "Task: \"{task}\".",
@@ -56,8 +56,8 @@
     ]
   },
   "ArtDesign": {
-    "assistant_role_name": "Programmer",
-    "user_role_name": "Chief Creative Officer",
+    "assistant_role_name": "程序员",
+    "user_role_name": "首席创意官",
     "phase_prompt": [
       "Our developed source codes and corresponding test reports are listed below: ",
       "Task: \"{task}\".",
@@ -83,8 +83,8 @@
     ]
   },
   "ArtIntegration": {
-    "assistant_role_name": "Programmer",
-    "user_role_name": "Chief Creative Officer",
+    "assistant_role_name": "程序员",
+    "user_role_name": "首席创意官",
     "phase_prompt": [
       "Our developed source codes and corresponding test reports are listed below: ",
       "Task: \"{task}\".",
@@ -109,8 +109,8 @@
     ]
   },
   "CodeComplete": {
-    "assistant_role_name": "Programmer",
-    "user_role_name": "Chief Technology Officer",
+    "assistant_role_name": "程序员",
+    "user_role_name": "首席技术官",
     "phase_prompt": [
       "According to the new user's task and our software designs listed below: ",
       "Task: \"{task}\".",
@@ -132,8 +132,8 @@
     ]
   },
   "CodeReviewComment": {
-    "assistant_role_name": "Code Reviewer",
-    "user_role_name": "Programmer",
+    "assistant_role_name": "代码审查员",
+    "user_role_name": "程序员",
     "phase_prompt": [
       "According to the new user's task and our software designs: ",
       "Task: \"{task}\".",
@@ -153,8 +153,8 @@
     ]
   },
   "CodeReviewModification": {
-    "assistant_role_name": "Programmer",
-    "user_role_name": "Code Reviewer",
+    "assistant_role_name": "程序员",
+    "user_role_name": "代码审查员",
     "phase_prompt": [
       "According to the new user's task, our designed product modality, languages and ideas, our developed first-edition source codes are listed below: ",
       "Task: \"{task}\".",
@@ -177,8 +177,8 @@
     ]
   },
   "TestErrorSummary": {
-    "assistant_role_name": "Programmer",
-    "user_role_name": "Software Test Engineer",
+    "assistant_role_name": "程序员",
+    "user_role_name": "软件测试工程师",
     "phase_prompt": [
       "Our developed source codes and corresponding test reports are listed below: ",
       "Programming Language: \"{language}\"",
@@ -190,8 +190,8 @@
     ]
   },
   "TestModification": {
-    "assistant_role_name": "Programmer",
-    "user_role_name": "Software Test Engineer",
+    "assistant_role_name": "程序员",
+    "user_role_name": "软件测试工程师",
     "phase_prompt": [
       "Our developed source codes and corresponding test reports are listed below: ",
       "Programming Language: \"{language}\"",
@@ -213,8 +213,8 @@
     ]
   },
   "EnvironmentDoc": {
-    "assistant_role_name": "Programmer",
-    "user_role_name": "Chief Technology Officer",
+    "assistant_role_name": "程序员",
+    "user_role_name": "首席技术官",
     "phase_prompt": [
       "The new user's task and our developed codes are listed: ",
       "Task: \"{task}\".",
@@ -233,8 +233,8 @@
     ]
   },
   "Manual": {
-    "assistant_role_name": "Chief Product Officer",
-    "user_role_name": "Chief Executive Officer",
+    "assistant_role_name": "产品经理",
+    "user_role_name": "首席执行官",
     "phase_prompt": [
       "The new user's task, our developed codes and required dependencies are listed: ",
       "Task: \"{task}\".",

@@ -1,48 +1,48 @@
 const coordSet = [];
-coordSet["Chief Executive Officer"] = {
-    "character": "Chief Executive Officer",
+coordSet["首席执行官"] = {
+    "character": "首席执行官",
     "imgid": "right",
     "top": "-315px",
     "left": "280px"
 };
-coordSet["Chief Product Officer"] = {
-    "character": "Chief Product Officer",
+coordSet["产品经理"] = {
+    "character": "产品经理",
     "imgid": "left",
     "top": "-165px",
     "left": "110px"
 };
-coordSet["Chief Human Resource Officer"] = {
-    "character": "Chief Human Resource Officer",
+coordSet["首席人力资源官"] = {
+    "character": "首席人力资源官",
     "imgid": "left",
     "top": "-305px",
     "left": "55px"
 };
-coordSet["Code Reviewer"] = {
-    "character": "Code Reviewer",
+coordSet["代码审查员"] = {
+    "character": "代码审查员",
     "imgid": "left",
     "top": "-185px",
     "left": "500px"
 };
-coordSet["Programmer"] = {
-    "character": "Programmer",
+coordSet["程序员"] = {
+    "character": "程序员",
     "imgid": "right",
     "top": "-80px",
     "left": "300px"
 };
-coordSet["Chief Technology Officer"] = {
-    "character": "Chief Technology Officer",
+coordSet["首席技术官"] = {
+    "character": "首席技术官",
     "imgid": "right",
     "top": "-130px",
     "left": "340px"
 };
-coordSet["Chief Creative Officer"] = {
-    "character": "Chief Creative Officer",
+coordSet["首席创意官"] = {
+    "character": "首席创意官",
     "imgid": "right",
     "top": "-95px",
     "left": "205px"
 }
-coordSet["Software Test Engineer"] = {
-    "character": "Software Test Engineer",
+coordSet["软件测试工程师"] = {
+    "character": "软件测试工程师",
     "imgid": "right",
     "top": "-90px",
     "left": "470px"
@@ -54,8 +54,8 @@ coordSet["User"] = {
     "top": "-465px",
     "left": "125px"
 }
-coordSet["Counselor"] = {
-    "character": "Counselor",
+coordSet["顾问"] = {
+    "character": "顾问",
     "imgid": "right",
     "top": "-360px",
     "left": "420px"
@@ -416,25 +416,25 @@ function createPara(d, i) {
 
         const characterimg = document.createElement("img");
         console.log(d.character);
-        if (d.character == "Programmer") {
+        if (d.character == "程序员") {
             characterimg.src = "figures/programmer.png";
-        } else if (d.character == "Code Reviewer") {
+        } else if (d.character == "代码审查员") {
             characterimg.src = "figures/reviewer.png";
-        } else if (d.character == "Chief Human Resource Officer") {
+        } else if (d.character == "首席人力资源官") {
             characterimg.src = "figures/hr.png";
-        } else if (d.character == "Chief Executive Officer") {
+        } else if (d.character == "首席执行官") {
             characterimg.src = "figures/ceo.png";
-        } else if (d.character == "Chief Product Officer") {
+        } else if (d.character == "产品经理") {
             characterimg.src = "figures/cpo.png";
-        } else if (d.character == "Chief Technology Officer") {
+        } else if (d.character == "首席技术官") {
             characterimg.src = "figures/cto.png";
-        } else if (d.character == "Chief Creative Officer") {
+        } else if (d.character == "首席创意官") {
             characterimg.src = "figures/designer.png";
-        } else if (d.character == "Software Test Engineer") {
+        } else if (d.character == "软件测试工程师") {
             characterimg.src = "figures/tester.png";
         } else if (d.character == "User") {
             characterimg.src = "figures/user.png";
-        } else if (d.character == "Counselor") {
+        } else if (d.character == "顾问") {
             characterimg.src = "figures/counselor.png";
         } else if (d.character == "Prompt Engineer") {
             characterimg.src = "figures/pe.png";

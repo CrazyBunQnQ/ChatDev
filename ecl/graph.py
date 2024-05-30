@@ -184,12 +184,12 @@ class Graph:
         utterances = [utterance for utterance in utterances if
                       "flask app.py" not in utterance and "OpenAI_Usage_Info" not in utterance]
         index = [i for i, utterance in enumerate(utterances) if
-                 "Programmer<->Chief Technology Officer on : EnvironmentDoc" in utterance]
+                 "程序员<->首席技术官 on : EnvironmentDoc" in utterance]
         if len(index) > 0:
             utterances = utterances[:index[0] - 1]
 
         utterances_code= [utterance for utterance in utterances if
-                           "Programmer<->" in utterance and "EnvironmentDoc" not in utterance and "TestErrorSummary" not in utterance]
+                           "程序员<->" in utterance and "EnvironmentDoc" not in utterance and "TestErrorSummary" not in utterance]
         print("len(utterances_code):", len(utterances_code))
 
         codebook, fingerprints, pre_mid = {}, set(), ""
@@ -235,20 +235,20 @@ class Graph:
             # print(group2)
             utterances.append(group2)
             # print()
-        utterances = [utterance for utterance in utterances if "Chief Technology Officer: **[Start Chat]**" in utterance or "Code Reviewer: **[Start Chat]**" in utterance or "Software Test Engineer: **[Start Chat]**" in utterance]
+        utterances = [utterance for utterance in utterances if "首席技术官: **[Start Chat]**" in utterance or "代码审查员: **[Start Chat]**" in utterance or "软件测试工程师: **[Start Chat]**" in utterance]
         if "Test Pass!" in content:
-            utterances.append("Software Test Engineer: **[Start Chat]**\n\nTest Pass!")
+            utterances.append("软件测试工程师: **[Start Chat]**\n\nTest Pass!")
 
         instructions, roles = [], []
         for utterance in utterances:
             utterance = utterance.lower()
             instruction = ""
-            if "Chief Technology Officer: **[Start Chat]**".lower() in utterance:
+            if "首席技术官: **[Start Chat]**".lower() in utterance:
                 instruction = "write one or multiple files and make sure that every detail of the architecture is implemented as code"
-            elif "Code Reviewer: **[Start Chat]**".lower() in utterance:
+            elif "代码审查员: **[Start Chat]**".lower() in utterance:
                 instruction = utterance.split("Comments on Codes:".lower())[-1].split("In the software,".lower())[0]
                 instruction = instruction.replace("<comment>".lower(), "")
-            elif "Software Test Engineer: **[Start Chat]**".lower() in utterance:
+            elif "软件测试工程师: **[Start Chat]**".lower() in utterance:
                 if "Test Pass!".lower() in utterance:
                     instruction = "Test Pass!"
                 else:

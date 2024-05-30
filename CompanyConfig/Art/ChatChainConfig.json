@@ -102,15 +102,15 @@
     }
   ],
   "recruitments": [
-    "Chief Executive Officer",
-    "Counselor",
-    "Chief Human Resource Officer",
-    "Chief Product Officer",
-    "Chief Technology Officer",
-    "Programmer",
-    "Code Reviewer",
-    "Software Test Engineer",
-    "Chief Creative Officer"
+    "首席执行官",
+    "顾问",
+    "首席人力资源官",
+    "产品经理",
+    "首席技术官",
+    "程序员",
+    "代码审查员",
+    "软件测试工程师",
+    "首席创意官"
   ],
   "clear_structure": "True",
   "gui_design": "True",
