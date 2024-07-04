@@ -7,7 +7,7 @@ import os
 import time
 
 self_api_key = os.environ.get('OPENAI_API_KEY')
-BASE_URL = os.environ.get('BASE_URL')
+BASE_URL = os.environ.get('OPENAI_API_URL')
 
 if BASE_URL:
     client = openai.OpenAI(
